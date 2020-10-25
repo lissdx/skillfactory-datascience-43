@@ -13,5 +13,5 @@ as the name is changed.
 
 
 #### SkillFactory DataScience 43 Course. 
-Some code and solutions
-My Data Science Projects. As result of studying on Skillfactory's course DST-WEEKLY-2.0 Data Science 43
+Some code, projects and solutions developed during 
+my studying on Skillfactory course DST-WEEKLY-2.0 Data Science 43
