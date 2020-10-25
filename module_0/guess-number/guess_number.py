@@ -46,7 +46,7 @@ def main():
             search_list = search_list[:ind]
         # User doesn't remember number
         else:
-            print(f'Something is goinng wrong')
+            print(f'Something is going wrong')
             print(f'See you!')
             sys.exit()
 
