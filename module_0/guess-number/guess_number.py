@@ -1,4 +1,5 @@
 import sys
+
 from core import guess_index, read_user_input
 
 MAX_NUM = 100
@@ -9,7 +10,6 @@ def main():
     """
     The game based on binary-search algorithm
     https://en.wikipedia.org/wiki/Binary_search_algorithm
-    :return:
     """
     ind = None
     is_answer_found = False
@@ -19,15 +19,15 @@ def main():
     start_play_txt = f"Hi, my friend! Could you choose a number between {MIN_NUM} and {MAX_NUM} and remember it?" + \
                      "\nI'll try to guess it ASAP!\nJust answer to flowing question...\nPress ENTER to continue"
 
-    guess_answer = "*****\nYour number is {}.\nPress\nY - if I'm right\nB - your number bigger" + \
-                   "\nS - your number smaller" + \
-                   "\nE - exit"
+    guess_answer_txt = "*****\nYour number is {}.\nPress\nY - if I'm right\nB - your number bigger" + \
+                       "\nS - your number smaller" + \
+                       "\nE - exit"
 
     input(start_play_txt)
 
     while not is_answer_found:
         ind: int = guess_index(search_list)
-        print(guess_answer.format(search_list[ind]))
+        print(guess_answer_txt.format(search_list[ind]))
         answer = read_user_input()
 
         if answer == 'E':
